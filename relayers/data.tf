@@ -28,7 +28,7 @@ data "aws_subnets" "ec2_public_subnets" {
   }
 }
 
-data "aws_acm_certificate" "tangle_tools" {
-  domain   = "*.tangle.tools"
+data "aws_acm_certificate" "chainsafe_io" {
+  domain   = "*.chainsafe_io"
   statuses = ["ISSUED"]
 }
